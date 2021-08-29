@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="You can easily convert the Temperature using these website.Hi Coding Guru here.I am a youtuber.With 300 subscribers on Youtube">
+    <meta name="keyword" content="Temperature converture,Coding,Coding Guru,Youtube,Youtuber,Web Developer,HTML,CSS,Saksham Gupta">
+    <meta name="author" content="Saksham Gupta">
+    <title>Temperature converter</title>
+</head>
+<body>
+<h2>Temperature converter</h2>
+<p><input id="c" onkeyup="convert('C')"> degrees Celsius</p>
+
+<p><input id="f" onkeyup="convert('F')"> degrees Fahrenheit</p> 
+<script>
+function convert(degree) {
+  var x;
+  if (degree == "C") {
+    x = document.getElementById("c").value * 9 / 5 + 32;
+    document.getElementById("f").value = Math.round(x);
+  } else {
+    x = (document.getElementById("f").value -32) * 5 / 9;
+    document.getElementById("c").value = Math.round(x);
+  }
+}
+</script>
+<style>
+    
+    body{
+        background-color:rgb(213, 199, 214);
+    }
+</style>
+
+</body>
+</html>
